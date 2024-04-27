@@ -7,11 +7,11 @@ from goods.models import Categories
 # Create your views here.
 # такая функция в файле views называется представлением или контроллером
 def index(request):
-    categories = Categories.objects.all()
+    # categories = Categories.objects.all()
     context = {
         "title": "Home - Главная",
         "content": "Магазин мебели HOME",
-        "categories": categories,
+        # "categories": categories,
     }
     return render(request, "main/index.html", context)
 
